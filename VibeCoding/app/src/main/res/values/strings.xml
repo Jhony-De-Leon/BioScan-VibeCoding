@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">VibeCoding</string>
+    <string name="bioscan">BioScan</string>
+    <string name="oficina">oficina #4</string>
+    <string name="toma_iris">toma de iris</string>
+    <string name="toma_huellas">toma de huellas</string>
+    <string name="tiempo">tiempo: %1$s</string>
+    <string name="tiempo_inicial">tiempo: 00:00:00</string>
+    <string name="nacionalidad">Nacionalidad</string>
+    <string name="guardar_registro">Guardar registro</string>
+    <string name="ver_porcentaje">Ver porcentaje registro</string>
+    <string name="nuevo_registro">Iniciar nuevo registro</string>
+    <string name="iniciando_iris">Iniciando toma de iris</string>
+    <string name="finalizando_iris">Toma de iris finalizada</string>
+    <string name="iniciando_huellas">Iniciando toma de huellas</string>
+    <string name="finalizando_huellas">Toma de huellas finalizada</string>
+    <string name="finaliza_ambas">Finaliza ambas tomas antes de guardar</string>
+    <string name="registro_guardado">Registro guardado</string>
+    <string name="error_guardar">Error al guardar</string>
+    <string name="sin_registros">Sin registros</string>
+    <string name="promedio_iris">Promedio iris: %1$s</string>
+    <string name="promedio_huellas">Promedio huellas: %1$s</string>
+    <string name="nuevo_registro_iniciado">Nuevo registro iniciado</string>
+</resources>

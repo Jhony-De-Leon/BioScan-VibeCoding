@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bioscan"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/tvSubtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oficina"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Sección toma de iris -->
+    <ImageView
+        android:id="@+id/ivCheckIris"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@android:drawable/checkbox_on_background"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:id="@+id/tvIris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toma_iris"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/ivCheckIris"
+        app:layout_constraintStart_toEndOf="@id/ivCheckIris"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTiempoIris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tiempo_inicial"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvIris"
+        app:layout_constraintStart_toStartOf="@id/tvIris"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Sección toma de huellas -->
+    <ImageView
+        android:id="@+id/ivCheckHuellas"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@android:drawable/checkbox_on_background"
+        app:layout_constraintTop_toBottomOf="@id/tvTiempoIris"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:id="@+id/tvHuellas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toma_huellas"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/ivCheckHuellas"
+        app:layout_constraintStart_toEndOf="@id/ivCheckHuellas"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTiempoHuellas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tiempo_inicial"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvHuellas"
+        app:layout_constraintStart_toStartOf="@id/tvHuellas"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Spinner de nacionalidad -->
+    <TextView
+        android:id="@+id/tvNacionalidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nacionalidad"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTiempoHuellas"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerNacionalidad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tvNacionalidad"
+        app:layout_constraintStart_toEndOf="@id/tvNacionalidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"/>
+
+    <!-- Botones -->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar_registro"
+        app:layout_constraintTop_toBottomOf="@id/spinnerNacionalidad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <Button
+        android:id="@+id/btnVerPorcentaje"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ver_porcentaje"
+        app:layout_constraintTop_toBottomOf="@id/btnGuardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <Button
+        android:id="@+id/btnNuevoRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/nuevo_registro"
+        app:layout_constraintTop_toBottomOf="@id/btnVerPorcentaje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
